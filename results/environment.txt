@@ -1,0 +1,36 @@
+date: 2026-11-23T13:42:56Z
+== CPU ==
+CPU(s):                                  2
+Model name:                              12th Gen Intel(R) Core(TM) i7-1255U
+Thread(s) per core:                      2
+Core(s) per socket:                      1
+Socket(s):                               1
+Hypervisor vendor:                       Microsoft
+L1d cache:                               48 KiB (1 instance)
+L2 cache:                                1.3 MiB (1 instance)
+L3 cache:                                12 MiB (1 instance)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0,1
+nproc (execution contexts available): 2
+physical machines used: 1 (claude); all MPI processes run on this VM
+== memory ==
+               total        used        free      shared  buff/cache   available
+Mem:            3915         247        2675           0         992        3452
+Swap:              0           0           0
+== network interfaces ==
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+== OS ==
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+6.8.0-149-generic
+== C ==
+gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0
+flags: -O2 -fno-tree-vectorize -std=c11 -Wall -lm (+ -fopenmp for matmul3)
+== MPI ==
+mpirun (Open MPI) 5.0.11
+mpicc: cc -I/sessions/rcw-01ncbos19ys8frawfm8jk8qs/.local/include -pthread -L/sessions/rcw-01ncbos19ys8frawfm8jk8qs/.local/lib -Wl,-rpath -Wl,/sessions/rcw-01ncbos19ys8frawfm8jk8qs/.local/lib -Wl,--enable-new-dtags -lmpi
+mpirun options: --oversubscribe --bind-to none --mca pml ob1 --mca btl self,sm | self,tcp (btl_tcp_if_include lo)
+OpenMP (par only): OMP_NUM_THREADS=2, OMP_DYNAMIC=false, no affinity
+Numerical libraries in the benchmark processes: none (no BLAS); every MPI rank is single-threaded
+== Python (inputs and analysis only) ==
+Python 3.10.12
+numpy 2.2.6 matplotlib 3.10.9

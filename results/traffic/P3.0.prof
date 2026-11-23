@@ -1,0 +1,16 @@
+# POINT TO POINT
+E	0	1	44744704 bytes	7 msgs sent	5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+E	0	2	44728320 bytes	7 msgs sent	5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+# OSC
+# COLLECTIVES
+C	0	0	11190272 bytes	1 msgs sent
+C	0	1	55935000 bytes	11 msgs sent
+C	0	2	55902232 bytes	11 msgs sent
+D	MPI_COMM_SELF	procs: 0
+O2A	0	0 bytes	0 msgs sent
+A2O	0	0 bytes	0 msgs sent
+A2A	0	0 bytes	0 msgs sent
+D	MPI_COMM_WORLD	procs: 0,1,2
+O2A	0	100663296 bytes	2 msgs sent
+A2O	0	22364208 bytes	4 msgs sent
+A2A	0	0 bytes	5 msgs sent
