@@ -174,7 +174,7 @@ With the same 2 execution contexts, MPI and OpenMP reach the same time within th
 
 ### 5.4 Limitations
 
-- **Local execution only.** All processes run on one VM; data moves through shared memory (or TCP over loopback, which is still a memory copy). The study shows framework behaviour and process overhead, **not inter-machine network performance or multi-machine memory capacity**. A multi-machine cluster was not available; local multi-process execution is used subject to the instructor's permission.
+- **Local execution only.** All processes run on one VM; data moves through shared memory (or TCP over loopback, which is still a memory copy). The study shows framework behaviour and process overhead, **not inter-machine network performance or multi-machine memory capacity**.
 - **2 logical processors.** Scaling beyond P = 2 cannot be observed; P = 3, 4 test oversubscription only.
 - **Host variability.** The VM shares the laptop with the host system; drifts of 10–30 % between runs limit the comparisons between methods (H3).
 - **Barriers** between phases make the phases additive but add a small synchronisation cost and prevent overlap of communication and computation. No weak-scaling study.
